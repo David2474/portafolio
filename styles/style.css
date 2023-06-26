@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(7, 7, 32);
+    color: white;
+}
+
+.navegacion{
+    border: 1px solid beige;
+    height: 70px;
+    width: 100%;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.navegacion ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    cursor: pointer;
+    margin: 20px;
+    padding: 7px 12px;
+}
+
+/* CONTENEDOR INFO */
+
+.contenedor-info{
+    border: 1px solid white;
+    margin: 120px 0 60px 0;
+    padding: 50px 0; 
+}
+
+.info-prime{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-dev{
+    font-size: 50px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.text-dev{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.second-text{
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+
+.cont-contacto{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0 0 10px;
+}
+
+.redes{
+    border: 1px solid beige;
+    display: flex;
+    align-items: center;
+}
+
+.redes a{
+    padding: 0 15px;
+}
+
+.descargar{
+    border: 1px solid white;
+    background-color: azure;
+    border-radius: 15px;
+    width: 140px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+}
+
+.descargar a{
+    text-decoration: none;
+    color: black;
+}
+
+/* SOBRE MI */
+
+.cont-sobre-mi{
+    border: 1px solid white;
+    margin: 150px 0;
+    padding: 50px 0;
+}
