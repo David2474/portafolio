@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: rgb(7, 7, 32);
+    background-color: rgb(9, 9, 15);
     color: white;
 }
 
@@ -106,4 +106,61 @@ li{
     border: 1px solid white;
     margin: 150px 0;
     padding: 50px 0;
+}
+
+.sobre-mi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-sobreMi{
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.text-sobreMi{
+    padding: 10px;
+    border: 1px solid red;
+    width: 120vh;
+    text-align: justify;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* TECNOLOGIAS */
+
+.tecnologias{
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-tecnologias{
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.list-tecnologias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.img-tec{
+    width: 23vh;
+    height: 30vh;
+    margin: 8px 7px;
 }
