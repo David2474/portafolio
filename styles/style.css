@@ -15,6 +15,7 @@ body{
     width: 100%;
     font-size: 20px;
     text-transform: capitalize;
+    background-color: orangered;
 }
 
 .navegacion ul{
@@ -29,6 +30,10 @@ li{
     cursor: pointer;
     margin: 20px;
     padding: 7px 12px;
+}
+
+.list:hover{
+    border-bottom: 2px solid white;
 }
 
 /* CONTENEDOR INFO */
@@ -104,19 +109,18 @@ li{
 
 .cont-sobre-mi{
     border: 1px solid white;
-    margin: 150px 0;
-    padding: 50px 0;
 }
 
 .sobre-mi{
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .title-sobreMi{
-    margin-bottom: 30px;
     font-size: 40px;
+    margin: 70px 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -134,18 +138,27 @@ li{
 /* TECNOLOGIAS */
 
 .tecnologias{
-    margin: 100px 0;
+    margin: 100px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(114, 119, 124);
+    width: 80%;
+    border-radius: 20px;
+    padding: 20px;
 }
 
 .title-tecnologias{
+    color: rgb(12, 251, 255);
+    font-weight: 600;
     font-size: 40px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .list-tecnologias{
+    color: black;
+    font-family: 24px;
+    font-weight: 500;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -160,7 +173,106 @@ li{
 
 
 .img-tec{
-    width: 23vh;
-    height: 30vh;
+    width: 6vh;
+    height: 6vh;
     margin: 8px 7px;
 }
+
+/* PROYECTOS */
+.cont-proyectos{
+    margin-top: 160px;
+    border: 2px solid red;
+    height: 260vh;
+}
+
+.title-proyect{
+    text-align: center;
+    padding: 40px;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.mis-proyectos{
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+}
+
+.cont-card{
+    margin: 25px 20px;
+}
+
+.cont-card img{
+    width: 420px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.card-title{
+    text-align: center;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* CONSTACTO */
+.contacto{
+    margin: 200px 0 100px 0;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 30px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-contacto{
+    color: white;
+    text-align: center;
+    padding: 40px;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contact{
+    width: 70%;
+    margin: 0 0 25px 0;
+    height: 30px;
+    font-size: 17px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: rgb(9, 9, 15); 
+    outline: none;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contact:active{
+    border: none;
+}
+
+.btn{
+    margin: 25px 0;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(32, 187, 187);
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 120px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.btn:hover{
+    background-color: rgb(0, 255, 255);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+

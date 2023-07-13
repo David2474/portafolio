@@ -6,15 +6,16 @@
     <link rel="stylesheet" href="./styles/style.css">
     <title>Portafolio|DavidGutierrez</title>
     <link rel="shortcut icon" href="./icons/terminal.svg" type="image/x-icon">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
     
         
         <nav class="navegacion">
             <ul>
-                <li>sobre mi</li>
-                <li>proyectos</li>
-                <li>contacto</li>
+                <li class="list">sobre mi</li>
+                <li class="list">proyectos</li>
+                <li class="list">contacto</li>
             </ul>
         </nav>
 
@@ -63,7 +64,7 @@
             <li><img src="./icons/tecnologias/git-icon-svgrepo-com.svg" alt="" class="img-tec">GIT</li>
             <li><img src="./icons/tecnologias/javascript-svgrepo-com.svg" alt="" class="img-tec">JavaScript</li>
             <li><img src="./icons/tecnologias/adobe-xd-svgrepo-com.svg" alt="" class="img-tec">Adobe</li>
-            <li><img src="./icons/tecnologias/react-svgrepo-com.svg" alt="" class="img-tec">React</li>
+            <li><img src="./icons/tecnologias/react-svgrepo-com.svg" alt="" class="img-tec">React js</li>
             <li><img src="./icons/tecnologias/tailwind-svgrepo-com.svg" alt="" class="img-tec">Tailwind css</li>
             <li><img src="./icons/tecnologias/windows-applications-svgrepo-com.svg" alt="" class="img-tec">Windows</li>
             <li><img src="./icons/tecnologias/linux-tux-svgrepo-com.svg" alt="" class="img-tec">Linux Debian</li>
@@ -73,16 +74,53 @@
     </section>
 
     <section class="cont-proyectos">
+
+        <h3 class="title-proyect">Proyectos</h3>
         <div class="mis-proyectos">
             <!-- PORTAFOLIO -->
+
+            <div class="cont-card">
+                <img src="/icons/proyectos/list-app.png" alt="" class="img-proyect">
+                <p class="card-title">Lista de tareas</p>
+            </div>
+            <div class="cont-card">
+                <img src="/icons/proyectos/pagNissosi1.png" alt="" class="img-proyect">
+                <p class="card-title">E-commerce</p>
+            </div>
+            <div class="cont-card">
+                <img src="/icons/proyectos/sumaryResult.png" alt="" class="img-proyect">
+                <p class="card-title">Calcula resultados</p>
+            </div>
+            <div class="cont-card">
+                <img src="/icons/proyectos/apiPeli.png" alt="" class="img-proyect">
+                <p class="card-title">Api de peliculas</p>
+            </div>
+            <div class="cont-card">
+                <img src="/icons/proyectos/tienda.png" alt="" class="img-proyect">
+                <p class="card-title">Tienda</p>
+            </div>
+            <div class="cont-card">
+                <img src="/icons/proyectos/calular-edad.png" alt="" class="img-proyect">
+                <p class="card-title">Calcular edad</p>
+            </div>
         </div>
 
     </section>
         <!-- CONTACTO -->
+        <section class="contacto">
+            <p class="title-contacto">Contacto</p>
+            <form id="contact-form" class="contact-form">
+                <input type="hidden" name="contact_number" class="contact">
+                <label class="input-title">Name</label>
+                <input type="text" name="user_name" class="contact">
+                <label class="input-title">Email</label>
+                <input type="email" name="user_email" class="contact">
+                <label class="input-title">Message</label>
+                <textarea name="message" class="contact"></textarea>
+                <input type="submit" value="Send" class="btn">
+            </form>
+        </section>
 
-        <form action="" class="contacto">
-
-        </form>
-
+        <script src="./src/contacto.js"></script>
 </body>
 </html>
