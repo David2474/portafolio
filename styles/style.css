@@ -5,17 +5,30 @@
 }
 
 body{
-    background-color: rgb(9, 9, 15);
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .navegacion{
-    border: 1px solid beige;
-    height: 70px;
+    height: 90px;
     width: 100%;
-    font-size: 20px;
+    font-size: 17px;
     text-transform: capitalize;
-    background-color: orangered;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    margin-top: -50px;
+    backdrop-filter: blur(10px);
+}
+
+.navegacion .name{
+    margin: 0 0 0 27px;
+    font-size: 22px;
+    cursor: pointer;
 }
 
 .navegacion ul{
@@ -23,25 +36,35 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 15px 0 0;
 }
 
 li{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     cursor: pointer;
-    margin: 20px;
+    margin: 10px;
     padding: 7px 12px;
 }
 
 .list:hover{
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid rgb(0, 0, 0);
 }
 
 /* CONTENEDOR INFO */
 
 .contenedor-info{
     border: 1px solid white;
-    margin: 120px 0 60px 0;
+    margin: 50px 0 60px 0;
     padding: 50px 0; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .info-prime{
@@ -50,12 +73,40 @@ li{
     align-items: center;
 }
 
-.title-dev{
-    font-size: 50px;
-    margin: 10px;
-    text-transform: uppercase;
+
+
+
+/* animacion del texto del inicio*/
+@keyframes textMove {
+    3%{
+        background-position: 70%;
+    }
+    100%{
+        background-position: 350%;
+    }
 }
 
+.info-prime .title-dev{
+    font-size: 70px;
+    cursor: pointer;
+}
+
+.info-prime .text-dev{
+    background: linear-gradient(to bottom right,
+    rgb(26, 96, 237), 
+    rgb(110, 5, 215), 
+    rgb(234, 31, 252));
+    word-spacing: 5px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 400%;
+    animation: textMove 10s infinite linear;
+    cursor: pointer;
+    transition: ease-in;
+}
+
+
+/* aqui termina la animacion de los textos */
 .text-dev{
     font-size: 40px;
     font-weight: 600;
@@ -67,49 +118,36 @@ li{
 }
 
 
-.cont-contacto{
-    display: flex;
-    justify-content: space-around;
-    margin: 100px 0 0 10px;
+.cont-icon img{
+    height: 400px;
 }
 
-.redes{
-    border: 1px solid beige;
+.btn-contact{
     display: flex;
-    align-items: center;
 }
 
-.redes a{
-    padding: 0 15px;
-}
-
-.descargar{
-    border: 1px solid white;
-    background-color: azure;
-    border-radius: 15px;
-    width: 140px;
-    height: 40px;
+.btn-contact div{
+    border-radius: 10px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 50px;
+    background-color: #7c3bed;
+    cursor: pointer;
+    margin: 10px;
 }
 
-.donwload{
-    width: 20px;
+.btn-contact div:hover{
+    background-color: #5716c6;
+}
+
+.btn-contact div img{
     height: 30px;
-    margin-right: 15px;
-}
 
-.descargar a{
-    text-decoration: none;
-    color: black;
 }
 
 /* SOBRE MI */
-
-.cont-sobre-mi{
-    border: 1px solid white;
-}
 
 .sobre-mi{
     display: flex;
@@ -121,17 +159,13 @@ li{
 .title-sobreMi{
     font-size: 40px;
     margin: 70px 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .text-sobreMi{
     padding: 10px;
-    border: 1px solid red;
+    color: #020202;
     width: 120vh;
-    text-align: justify;
-    font-weight: 500;
-    font-size: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 19px;
 }
 
 
@@ -142,26 +176,25 @@ li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(114, 119, 124);
     width: 80%;
     border-radius: 20px;
     padding: 20px;
 }
 
 .title-tecnologias{
-    color: rgb(12, 251, 255);
+    color: #020202;
     font-weight: 600;
     font-size: 40px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .list-tecnologias{
-    color: black;
+    margin: 10px 0 0 0;
+    color: #020202;
     font-family: 24px;
-    font-weight: 500;
+    font-weight: 600;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+
 }
 
 li{
@@ -173,23 +206,22 @@ li{
 
 
 .img-tec{
-    width: 6vh;
-    height: 6vh;
+    width: 30px;
+    height: 30px;
     margin: 8px 7px;
 }
 
 /* PROYECTOS */
 .cont-proyectos{
+    border-width: thick;
     margin-top: 160px;
-    border: 2px solid red;
-    height: 260vh;
+    height: 900px;
 }
 
 .title-proyect{
     text-align: center;
     padding: 40px;
-    font-size: 25px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
 }
 
 .mis-proyectos{
@@ -197,28 +229,87 @@ li{
     height: 600px;
     flex-wrap: wrap;
     justify-content: center;
-  
+   
+}
+
+.cont-text{
+    width: 300px;
+    height: 350px;
 }
 
 .cont-card{
+    width: 380px;
     margin: 25px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.55);
 }
 
-.cont-card img{
-    width: 420px;
-    height: 450px;
+.cont-card .img-proyect{
+    height: 300px;
+    width: 380px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .card-title{
+    margin-top: 10px;
     text-align: center;
     font-size: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* CONSTACTO */
+.cont-text{
+    margin: 7px auto;
+    padding: 15px 0;
+    height: 200px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* boton git */
+.proyect-git{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 50px;
+    background-color: #7c3bed;
+    cursor: pointer;
+    margin: 13px auto;
+}
+
+.proyect-git:hover{
+    background-color: #5716c6;
+}
+
+.proyect-git img{
+    height: 30px;
+}
+
+
+.cont-card-tecno{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.cont-card-tecno p{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.tecno-img img{
+    margin: 10px 18px 0 10px;
+    width: 40px;
+    height: 40px;
+}
+
+/* CONTACTO */
 .contacto{
-    margin: 200px 0 100px 0;
+    margin: 150px 0 0px 0;
+    padding: 0 0 80px 0;
+    background-color: rgb(0, 0, 0);
 }
 
 .contact-form{
@@ -231,11 +322,10 @@ li{
 }
 
 .title-contacto{
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 40px;
-    font-size: 25px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 35px;
 }
 
 .contact{
@@ -244,11 +334,15 @@ li{
     height: 30px;
     font-size: 17px;
     border: none;
-    border-bottom: 1px solid white;
-    background-color: rgb(9, 9, 15); 
+    border-bottom: 2px solid #7c3bed;
+    background-color: rgb(0, 0, 0); 
     outline: none;
-    color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.contacto label{
+    color: #ffffff;
+    text-align: start;
 }
 
 .contact:active{
@@ -256,23 +350,19 @@ li{
 }
 
 .btn{
-    margin: 25px 0;
+    margin: 28px 0;
     width: 150px;
     height: 30px;
-    background-color: rgb(32, 187, 187);
+    background-color: #7c3bed;
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 10px;
     height: 40px;
     width: 120px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 16px;
 }
 
 .btn:hover{
-    background-color: rgb(0, 255, 255);
-    color: white;
-    font-size: 15px;
-    font-weight: 600;
+    background-color: #5716c6;
 }
 

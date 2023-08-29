@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Portafolio|DavidGutierrez</title>
+    <title>Portafolio | DavidGutierrez</title>
     <link rel="shortcut icon" href="./icons/terminal.svg" type="image/x-icon">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
@@ -12,7 +12,11 @@
     
         
         <nav class="navegacion">
+            <div class="name">
+                <p>DG</p>
+            </div>
             <ul>
+            <!-- menu -->
                 <li class="list">sobre mi</li>
                 <li class="list">proyectos</li>
                 <li class="list">contacto</li>
@@ -20,27 +24,35 @@
         </nav>
 
     <section class="contenedor-info">
-    
-        <div class="info">
-            <div class="info-prime">
-                <h1 class="title-dev">desarrollador front-end</h1>
-                <p class="text-dev">David Gutierrez</p>
-                <p class="second-text">Programador y estudiante de software</p>
-            </div>
-            <section class="cont-contacto">
-                <div class="redes">
-                    <a href="https://www.linkedin.com/in/dev-david-gutierrez/"><img src="./icons/redes/logo-linkedin.svg" alt=""></a>
-                    <a href=""><img src="./icons/redes/email.svg" alt=""></a>
-                    <a href="https://github.com/"> <img src="./icons/redes/logo-github.svg" alt=""></a>
-                    <!-- ICONOS -->
+         <div class="info-prime">
+             <div class="title-cont">
+                <!-- titulos principales -->
+                <p class="text-dev">Desarrollador front-end</p>
+                <h1 class="title-dev">David Gutierrez</h1>  
+             </div>
+             <div class="btn-contact">
+                <!-- BOTONES DE CONTACTO -->
+                <div>
+                    <a href="https://github.com/David2474">
+                        <img src="./icons/redes/github.png" alt="">
+                    </a>
                 </div>
-                <div class="descargar">
-                    <img src="./icons/redes/document-download.svg" class="donwload" alt="">
-                    <a href="./download/Daniel .docx" download="CV-DavidGutierrez">CV</a>
+                <div> 
+                    <a href="https://www.linkedin.com/in/dev-david-gutierrez/">
+                        <img src="./icons/redes/logotipo-de-linkedin.png" alt="">
+                    </a>
                 </div>
-            </section>
-        </div>
-
+                <div>
+                    <a href="./download/David Gutierrez.pdf" download="David Gutierrez">
+                        <img src="./icons/redes/cv.png" alt="">
+                    </a>
+                </div>
+             </div>
+         </div>
+         <!-- icono de binario -->
+         <div class="cont-icon">
+             <img src="./icons/tecnologias/binario.gif" alt="">
+         </div>
     </section>
 
     <section class="cont-sobre-mi">
@@ -52,7 +64,7 @@
             <p class="text-sobreMi">
                 Soy un desarrollador de software con tecnicatura en programación y actualmente estdiando la Universidad en Ing en
                 desarrollo de software multiplataforma y 2 años de experiencia desarrollando software. He participado en proyectos
-                de software colaborando con otras areas, diseño, backend y siempre viendo la escalabilidad del Proyecto.
+                de software colaborando con otras areas como diseño y backend.
             </p>
         </div>
 
@@ -79,30 +91,90 @@
         <div class="mis-proyectos">
             <!-- PORTAFOLIO -->
 
+            <!-- tarjeta de proyectos -->
             <div class="cont-card">
                 <img src="/icons/proyectos/list-app.png" alt="" class="img-proyect">
                 <p class="card-title">Lista de tareas</p>
+                <div class="cont-text">
+                    <!-- BOTON PARA DIRIGIR A GITHUB -->
+                    <div class="proyect-git">
+                        <a href="https://github.com/David2474">
+                            <img src="./icons/redes/github.png" alt="">
+                        </a>
+                    </div>
+                    <!-- TECNOLOGIAS -->
+                    <div class="cont-card-tecno">
+                        <div class="">
+                            <p>Tecnologias</p>
+                        </div>
+                        
+                        <div class="tecno-img">
+                            <img src="./icons/tecnologias/html-5-svgrepo-com.svg" alt="" class="img-card-tecno">
+                            <img src="./icons/tecnologias/css-3-svgrepo-com.svg" alt="" class="img-card-tecno">
+                            <img src="./icons/tecnologias/javascript-svgrepo-com.svg" alt="" class="img-card-tecno">
+                            <img src="./icons/tecnologias/git-icon-svgrepo-com.svg" alt="" class="img-card-tecno">
+                        </div>
+                    </div>
+                </div>
             </div>
+
             <div class="cont-card">
                 <img src="/icons/proyectos/pagNissosi1.png" alt="" class="img-proyect">
                 <p class="card-title">E-commerce</p>
+
+                <div class="cont-text">
+                    <!-- BOTON PARA DIRIGIR A GITHUB -->
+                    <div class="proyect-git">
+                        <a href="https://github.com/David2474">
+                            <img src="./icons/redes/github.png" alt="">
+                        </a>
+                    </div>
+                    <!-- TECNOLOGIAS -->
+                    <div class="cont-card-tecno">
+                        <div class="">
+                            <p>Tecnologias</p>
+                        </div>
+                        
+                        <div class="tecno-img">
+                            <img src="./icons/tecnologias/html-5-svgrepo-com.svg" alt="" class="img-card-tecno">
+                            <img src="./icons/tecnologias/css-3-svgrepo-com.svg" alt="" class="img-card-tecno">
+                            <img src="./icons/tecnologias/javascript-svgrepo-com.svg" alt="" class="img-card-tecno">
+                            <img src="./icons/tecnologias/git-icon-svgrepo-com.svg" alt="" class="img-card-tecno">
+                        </div>
+                    </div>
+                </div>
+                
             </div>
+
+            <!-- TARJETA PROYECTO-->
             <div class="cont-card">
                 <img src="/icons/proyectos/sumaryResult.png" alt="" class="img-proyect">
-                <p class="card-title">Calcula resultados</p>
+                <p class="card-title">Calcular resultados</p>
+
+                <div class="cont-text">
+                    <!-- BOTON PARA DIRIGIR A GITHUB -->
+                    <div class="proyect-git">
+                        <a href="https://github.com/David2474">
+                            <img src="./icons/redes/github.png" alt="">
+                        </a>
+                    </div>
+                    <!-- TECNOLOGIAS -->
+                    <div class="cont-card-tecno">
+                        <div class="">
+                            <p>Tecnologias</p>
+                        </div>
+                        
+                        <div class="tecno-img">
+                            <img src="./icons/tecnologias/html-5-svgrepo-com.svg" alt="" class="img-card-tecno">
+                            <img src="./icons/tecnologias/css-3-svgrepo-com.svg" alt="" class="img-card-tecno">
+                            <img src="./icons/tecnologias/javascript-svgrepo-com.svg" alt="" class="img-card-tecno">
+                            <img src="./icons/tecnologias/git-icon-svgrepo-com.svg" alt="" class="img-card-tecno">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="cont-card">
-                <img src="/icons/proyectos/apiPeli.png" alt="" class="img-proyect">
-                <p class="card-title">Api de peliculas</p>
-            </div>
-            <div class="cont-card">
-                <img src="/icons/proyectos/tienda.png" alt="" class="img-proyect">
-                <p class="card-title">Tienda</p>
-            </div>
-            <div class="cont-card">
-                <img src="/icons/proyectos/calular-edad.png" alt="" class="img-proyect">
-                <p class="card-title">Calcular edad</p>
-            </div>
+
+
         </div>
 
     </section>
@@ -111,11 +183,11 @@
             <p class="title-contacto">Contacto</p>
             <form id="contact-form" class="contact-form">
                 <input type="hidden" name="contact_number" class="contact">
-                <label class="input-title">Name</label>
+                <label class="input-title">Nombre</label>
                 <input type="text" name="user_name" class="contact">
-                <label class="input-title">Email</label>
+                <label class="input-title">Correo</label>
                 <input type="email" name="user_email" class="contact">
-                <label class="input-title">Message</label>
+                <label class="input-title">Mensaje</label>
                 <textarea name="message" class="contact"></textarea>
                 <input type="submit" value="Send" class="btn">
             </form>
